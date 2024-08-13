@@ -1,16 +1,28 @@
 # journalapp
 
-A new Flutter project.
+- Flutter Expense Tracker Application
+- Developer : Arnab Deep Nath
 
-## Getting Started
+## Frontend
 
-This project is a starting point for a Flutter application.
+1. Flutter
 
-A few resources to get you started if this is your first Flutter project:
+## State Management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Provider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Backend
+
+1. Firebase
+
+# Current Implementation
+
+1. Added Homepage UI
+
+# Upcoming Implementation
+
+1. Add Transaction Addtion Page
+2. Add Transaction Model
+3. Add User Model
+4. Connect Backend
+5. Optimize Coding
