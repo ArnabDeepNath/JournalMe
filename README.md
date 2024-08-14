@@ -18,11 +18,17 @@
 # Current Implementation
 
 1. Added Homepage UI
+2. Added Transaction Addtion Page
+3. Added Transaction Model
+4. Added User Model
+5. Connected Backend
+6. Added Sign In Page
+7. Added Sign Out Page
 
 # Upcoming Implementation
 
-1. Add Transaction Addtion Page
-2. Add Transaction Model
-3. Add User Model
-4. Connect Backend
-5. Optimize Coding
+1. Add Provider Function , User
+2. Display Expenses from Backend
+3. Add Expenses to Backend
+4. Optimise Code
+5. Production Build for IOS

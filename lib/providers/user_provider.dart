@@ -14,6 +14,8 @@ class UserProvider with ChangeNotifier {
         Type: '',
         CreatedAt: DateTime.fromMillisecondsSinceEpoch(1),
         IconName: '',
+        amount: 0.0,
+        userID: '',
       ),
     );
     notifyListeners();

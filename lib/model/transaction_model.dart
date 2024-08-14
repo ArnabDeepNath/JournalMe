@@ -6,6 +6,8 @@ class TransactionModel {
   late String Type;
   late DateTime CreatedAt;
   late String IconName;
+  late double amount;
+  late String userID;
 
   TransactionModel({
     required this.Name,
@@ -13,5 +15,7 @@ class TransactionModel {
     required this.Type,
     required this.CreatedAt,
     required this.IconName,
+    required this.amount,
+    required this.userID,
   });
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:journalapp/providers/user_provider.dart';
 import 'package:journalapp/screens/homepage.dart';
+import 'package:journalapp/screens/login_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Homepage(),
+      home: LoginPage(),
     );
   }
 }

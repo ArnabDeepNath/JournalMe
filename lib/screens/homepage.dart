@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:journalapp/model/transaction_model.dart';
 import 'package:journalapp/providers/user_provider.dart';
+import 'package:journalapp/screens/add_transaction_screen.dart';
 import 'package:provider/provider.dart';
 
 class Homepage extends StatefulWidget {
@@ -16,14 +17,6 @@ class _HomepageState extends State<Homepage> {
   TextEditingController transaction_name = TextEditingController();
   TextEditingController new_transaction_name = TextEditingController();
 
-  late TransactionModel newTransaction = TransactionModel(
-    Name: '',
-    Desc: '',
-    Type: '',
-    CreatedAt: DateTime.now(),
-    IconName: '',
-  );
-
   List<dynamic> _items = ['Coffee', 'Gift'];
   @override
   Widget build(BuildContext context) {
@@ -33,8 +26,15 @@ class _HomepageState extends State<Homepage> {
           borderRadius: BorderRadius.circular(100),
         ),
         backgroundColor: Colors.black,
-        onPressed: () {},
-        child: Icon(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddTransactionScreen(),
+            ),
+          );
+        },
+        child: const Icon(
           Icons.add,
           color: Colors.white,
         ),
@@ -43,7 +43,7 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
           ),
         ),
@@ -97,7 +97,7 @@ class _HomepageState extends State<Homepage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Text(
-                                        "\$",
+                                        "\Rs.",
                                         style: GoogleFonts.poppins(
                                           color: Colors.white,
                                           fontSize: 44,
@@ -115,7 +115,7 @@ class _HomepageState extends State<Homepage> {
                                   ),
                                 ),
                                 Text(
-                                  "USD",
+                                  "INR",
                                   style: GoogleFonts.poppins(
                                     color: Colors.grey.shade400,
                                     fontSize: 22,
